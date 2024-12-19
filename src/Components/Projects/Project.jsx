@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Project.css'
 import Frontend from '../../img/Frontend.png';
 import Backend from '../../img/Backend.png';
@@ -6,11 +6,14 @@ import Framework from '../../img/framework.png';
 import PaymentGateway from '../../img/PymentGateway.png';
 import Card from '../Card/Card';
 import Resume from './ShubhamSharma_Resume.pdf'
+import { themeContext } from '../../contaxt';
 function Project() {
+   const theme = useContext(themeContext);
+   const darkMode = theme.state.darkMode;
   return (
        <div className="services">
           <div className="awesome">
-                  <span>My MERN STACK</span>
+                  <span style={{ color: darkMode ? "white" : "" }}>My MERN STACK</span>
                   <span>SKILLS</span>
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     <br /> Ex nobis, praesentium voluptate iure obcaecati aspernatur iste voluptatem neque cumque</span>

@@ -8,11 +8,19 @@ import Intro from './Components/Intro/Intro'
 import NavBar from './Components/NavBar/NavBar'
 import PortFolio from './Components/Portfolio/PortFolio'
 import Project from './Components/Projects/Project'
-
+import { themeContext } from './contaxt'
+import { useContext } from 'react'
 function App() {
- 
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-       <div className="App">
+       <div className="App"
+       
+       style={{
+        background: darkMode ? "black" : "",
+        color: darkMode ? "white" : "",
+      }}
+       >
         <NavBar/>
         <Intro/>
         <Project/>

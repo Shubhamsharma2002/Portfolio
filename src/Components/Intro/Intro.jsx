@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Intro.css'
 import Github from '../../img/github.png';
 import LinkedIn from'../../img/linkedin.png';
@@ -10,12 +10,15 @@ import thumbup from '../../img/thumbup.png';
 import Crown from '../../img/crown.png';
 import glassesimoji from '../../img/glassesimoji.png';
 import Floating from '../FloatingDiv/Floating';
+import { themeContext } from '../../contaxt';
 function Intro() {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
         <div className="i-left">
               <div className="i-name">
-                <span>Hy I Am </span>
+                <span style={{ color: darkMode ? "white" : "" }}>Hy I Am </span>
                 <span>Shubham Sharma</span>
                 <span> Dedicated MERNstack developer with expertise in MongoDB, Express.js, React, and Node.js. Proficient in building dynamic, responsive web applications and RESTful APIs. Strong background in JavaScript and modern web technologies, with a keen understanding of front-end and back-end integration.</span>
               </div>
