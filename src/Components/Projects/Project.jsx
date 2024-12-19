@@ -11,7 +11,7 @@ function Project() {
    const theme = useContext(themeContext);
    const darkMode = theme.state.darkMode;
   return (
-       <div className="services">
+       <div className="services" id='skills'>
           <div className="awesome">
                   <span style={{ color: darkMode ? "white" : "" }}>My MERN STACK</span>
                   <span>SKILLS</span>
