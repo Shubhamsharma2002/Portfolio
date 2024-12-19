@@ -35,7 +35,7 @@ function Project() {
                     emoji={Backend}
                     heading={'Backend'}
                     detail={"Node js"}
-                    detail2={"DataBase:MongoDb,MongoDb Atlas"}
+                    detail2={"DataBase:MongoDb"}
                     lable={'Certificate'}
                     Link={'https://certificate.codingninjas.com/view/bda9254b7b8b4ccb'}
                     />
