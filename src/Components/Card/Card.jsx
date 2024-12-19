@@ -1,12 +1,14 @@
 import React from 'react'
 import './Card.css'
-function Card({emoji, heading, detail, color}) {
+function Card({emoji, heading, detail, color,lable='Learn More', Link}) {
     return (
         <div className="card" style={{borderColor: {color}}}> 
           <img src={emoji} alt="" />
           <span>{heading}</span>
           <span>{detail}</span>
-          <button className="c-button">LEARN MORE</button>
+          <a href={Link} target="_blank">
+          <button className="c-button">{lable}</button>
+          </a>
         </div>
       )
 }

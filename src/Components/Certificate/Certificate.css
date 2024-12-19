@@ -1,0 +1,45 @@
+.certificateDiv {
+    justify-content: space-around;
+    background: white;
+    box-shadow: var(--boxShadow);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    padding: 0px 28px 0px 0px;
+    height: 5.5rem;
+    border: 3px solid var(--orange);
+  }
+  .certificateDiv:hover{
+    border: 3px solid #f34e08;
+  }
+  .certificateDiv > span {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-left: 3px;
+    /* yahan ye color add kia hy bad mein dark mode k waqt */
+    color: black;
+  }
+
+  .c-btn {
+    background: #FFFFFF;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    border-radius: 7px;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #5290FD;
+}
+
+.c-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 1px solid var(--orange);
+}
+
+@media screen and (max-width: 480px) {
+
+       .certificateDiv{
+        width: 80%;
+        height: 8.8rem;
+       }
+}

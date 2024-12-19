@@ -1,0 +1,36 @@
+.experience {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    color: var(--black);
+  }
+  .e-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .right-ex  div{
+        margin-bottom: 5px;
+  }
+  
+  @media screen and (max-width: 480px) {
+      .experience{
+       margin-top: -10rem;
+       display: flex;
+       flex-direction: column;
+       margin-right: 20%;
+       gap: 1rem;
+    
+       height: 66rem;
+      }
+      .card{
+        margin-right: 5rem;
+      }
+      .right-ex{
+        margin-top: -6rem;
+      }
+      .right-ex  div{
+        width: 100%;
+        margin-bottom: 5px;
+  }
+  }
