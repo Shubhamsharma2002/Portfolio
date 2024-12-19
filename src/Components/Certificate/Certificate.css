@@ -39,7 +39,7 @@
 @media screen and (max-width: 480px) {
 
        .certificateDiv{
-        width: 80%;
+        width: auto;
         height: 8.8rem;
        }
 }

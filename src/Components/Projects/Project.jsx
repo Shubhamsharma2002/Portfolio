@@ -1,16 +1,17 @@
 import React from 'react'
 import './Project.css'
-import Humble from '../../img/humble.png';
-import HeartEmoji from '../../img/heartemoji.png';
-import Glasses from '../../img/glasses.png';
+import Frontend from '../../img/Frontend.png';
+import Backend from '../../img/Backend.png';
+import Framework from '../../img/framework.png';
+import PaymentGateway from '../../img/PymentGateway.png';
 import Card from '../Card/Card';
 import Resume from './ShubhamSharma_Resume.pdf'
 function Project() {
   return (
        <div className="services">
           <div className="awesome">
-                  <span>My Awesome</span>
-                  <span>Projects</span>
+                  <span>My MERN STACK</span>
+                  <span>SKILLS</span>
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     <br /> Ex nobis, praesentium voluptate iure obcaecati aspernatur iste voluptatem neque cumque</span>
                     <a href={Resume} download>
@@ -19,27 +20,52 @@ function Project() {
                   <div className='blur s-blur1' style={{background:"#ABF1FF94"}}></div>
           </div>
           <div className="cards">
-                 <div style={{left:'14rem'}}>
+                 <div style={{left:'15rem'}}>
                     <Card 
-                    emoji={HeartEmoji}
-                    heading={'Design'}
-                    detail={"figma,huuu,kk,kkk"}
+                    emoji={Frontend}
+                    heading={'Frontend'}
+                    detail={"HTML,CSS,JS"}
+                    detail2={"ejs template engine"}
+                    lable={'Certificate'}
+                    Link={'https://certificate.codingninjas.com/view/1bf76d5f6542766e'}
                     />
                  </div>
-                 <div style={{top:'12rem',left:'-4rem'}}>
+                 <div style={{left:'0.5rem'}}>
                     <Card 
-                    emoji={HeartEmoji}
-                    heading={'Design'}
-                    detail={"figma,huuu,kk,kkk"}
+                    emoji={Backend}
+                    heading={'Backend'}
+                    detail={"Node js"}
+                    detail2={"DataBase:MongoDb,MongoDb Atlas"}
+                    lable={'Certificate'}
+                    Link={'https://certificate.codingninjas.com/view/bda9254b7b8b4ccb'}
                     />
                  </div>
-                 <div style={{top:'19rem',left:'12rem'}}>
+                 <div style={{top:'18rem',left:'15rem'}}>
                     <Card 
-                    emoji={HeartEmoji}
-                    heading={'Design'}
-                    detail={"figma,huuu,kk,kkk"}
+                    emoji={Framework}
+                    heading={'FrameWork'}
+                    detail={"Frontend:React js"}
+                    detail2={"Backend:Express js"}
+                    lable={'Certificate'}
+                    Link={'https://certificate.codingninjas.com/view/2c6f92f8b4af8e8a'}
                     />
                  </div>
+                 <div style={{top:'18rem',left:'0.5rem'}}>
+                    <Card 
+                    emoji={PaymentGateway}
+                    heading={'PaymentGateWay Intregration'}
+                    detail={"Razorpay Payment Gateway"}
+                    detail2={"Stripe Payments"}
+                    />
+                 </div>
+                 {/* <div style={{top:'19rem',left:'12rem'}}>
+                    <Card 
+                    emoji={Framework}
+                    heading={'FrameWork'}
+                    detail={"figma,huuu,kk,kkk"}
+                    />
+                 </div> */}
+                
                  <div className='blur s-blur2' style={{background:"var(--purple)"}}></div>
                  
           </div>

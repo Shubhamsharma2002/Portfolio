@@ -6,8 +6,9 @@ import Certificate from '../Certificate/Certificate';
 function Expreince() {
     return (
         <>
-         <h1 className='e-text'>Experince & Training</h1>
+        <h1 className='e-text'>Experince & Training</h1>
         <div className="experience" id='experience'>
+                
                <div className="left-ex">
                   <Card emoji={Crown} className='card'
                      heading={'Teaching Assistance In MERN STACK DEVELOPMENT'}
