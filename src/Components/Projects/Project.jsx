@@ -15,8 +15,8 @@ function Project() {
           <div className="awesome">
                   <span style={{ color: darkMode ? "white" : "" }}>My MERN STACK</span>
                   <span>SKILLS</span>
-                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    <br /> Ex nobis, praesentium voluptate iure obcaecati aspernatur iste voluptatem neque cumque</span>
+                  <span>List of skill which im using in my all project and daily practice .
+                   </span>
                     <a href={Resume} download>
                   <button className='button s-button'>Download CV</button>
                   </a>

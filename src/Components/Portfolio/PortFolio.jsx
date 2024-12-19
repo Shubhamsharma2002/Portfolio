@@ -3,13 +3,12 @@ import React, { useContext } from 'react'
 import "swiper/css";
 import "./PortFolio.css"
 import { Swiper,SwiperSlide } from 'swiper/react';
-import Sidebar from '../../img/sidebar.png';
+
 import Ecommerce from '../../img/ecommerce.png';
-import MusicApp from '../../img/musicapp.png';
-import HOC from '../../img/hoc.png';
+
 import { themeContext } from '../../contaxt';
-// import Sidebar from '../../img/sidebar.png';
-// import Sidebar from '../../img/sidebar.png';
+import inventry from '../../img/inventry.jpg';
+import chatus from '../../img/chatus.jpg';
 function PortFolio() {
           const theme = useContext(themeContext);
           const darkMode = theme.state.darkMode;
@@ -41,17 +40,27 @@ function PortFolio() {
               }}
           >
             <SwiperSlide>
-              <img src={Sidebar} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
               <img src={Ecommerce} alt="" />
+              <p>E-com Backend Api</p>
+              <a href="https://github.com/Shubhamsharma2002/E-com-backendApi" target='_blank'>
+              <button className='button '>Github</button>
+              </a>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={MusicApp} alt="" />
+              <img src={inventry} alt="" />
+              <p> InventryApp</p>
+              <a href="https://github.com/Shubhamsharma2002/InventryApp" target='_blank'>
+              <button className='button '>Github</button>
+              </a>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={HOC} alt="" />
+              <img src={chatus} alt="" />
+              <p>Chat us</p>
+              <a href="https://github.com/Shubhamsharma2002/chatus" target='_blank'>
+              <button className='button '>Github</button>
+              </a>
             </SwiperSlide>
+           
           </Swiper>
         </div>
       );
