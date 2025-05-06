@@ -5,7 +5,7 @@ import Backend from '../../img/Backend.png';
 import Framework from '../../img/framework.png';
 import PaymentGateway from '../../img/PymentGateway.png';
 import Card from '../Card/Card';
-import Resume from './ShubhamSharma_Resume.pdf'
+import Resume from './Shubham_Sharma_Resume.pdf'
 import { themeContext } from '../../contaxt';
 function Project() {
    const theme = useContext(themeContext);
